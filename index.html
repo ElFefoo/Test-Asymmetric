@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asymmetric - Constructora & Arquitectura</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ASYMMETRIC</div>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Soluciones Constructivas Integrales</h1>
+            <p>Asesorías técnicas, proyectos comerciales y arquitectura de clase mundial</p>
+            <button class="cta-button" onclick="document.getElementById('contacto').scrollIntoView()">Solicitar Consulta</button>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card" onclick="openServiceModal(0)">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <h3>Asesorías Técnicas</h3>
+                <p>Evaluación de proyectos, asesoría normativa y due diligence inmobiliario</p>
+            </div>
+            <div class="service-card" onclick="openServiceModal(1)">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+                <h3>Proyectos Comerciales</h3>
+                <p>Diseño y construcción de espacios comerciales llave en mano</p>
+            </div>
+            <div class="service-card" onclick="openServiceModal(2)">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+                <h3>Arquitectura</h3>
+                <p>Diseño arquitectónico integral y proyectos ejecutivos</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="close-btn" onclick="closeModal('serviceModal')">✕</button>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <section id="portafolio">
+        <h2>Portafolio de Proyectos</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" onclick="filterPortfolio('todos')">Todos</button>
+            <button class="filter-btn" onclick="filterPortfolio('Comercial')">Comercial</button>
+            <button class="filter-btn" onclick="filterPortfolio('Arquitectura')">Arquitectura</button>
+            <button class="filter-btn" onclick="filterPortfolio('Asesoría')">Asesoría</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <div class="lightbox-img" id="lightboxImg"></div>
+            <div class="lightbox-info">
+                <h2 class="lightbox-title" id="lightboxTitle"></h2>
+                <p class="lightbox-description" id="lightboxDescription"></p>
+                <div class="lightbox-gallery" id="galleryThumbs"></div>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="prevImage()">❮</button>
+                <button class="lightbox-next" onclick="nextImage()">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Proyectos Completados</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Años de Experiencia</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Clientes Satisfechos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">12K+</div>
+                <div class="stat-label">m² Construidos</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="team-grid" id="teamGrid"></div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctenos</h2>
+        <div class="contact-wrapper">
+            <div class="contact-section">
+                <!-- FORMULARIO CON FORMSPREE INTEGRADO -->
+                <form action="https://formspree.io/f/xkgyally" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio de Interés</label>
+                        <input type="text" id="servicio" name="servicio">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>ASYMMETRIC</h3>
+            <p>Constructora & Arquitectura</p>
+            <div class="footer-links">
+                <a href="tel:+56912345678">+56 9 1234 5678</a>
+                <a href="mailto:contacto@asymmetric.cl">contacto@asymmetric.cl</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.8;">© 2024 Asymmetric</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
