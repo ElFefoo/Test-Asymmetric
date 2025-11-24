@@ -151,3 +151,25 @@ document.getElementById('telefono').addEventListener('input', function(e) {
     }
     e.target.value = value.trim();
 });
+
+
+
+document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('navList').classList.toggle('open');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var menu = document.getElementById('menuToggle');
+    var navList = document.getElementById('navList');
+    if(menu && navList){
+        menu.addEventListener('click', function(){
+            navList.classList.toggle('open');
+        });
+        // Opcional: cerrar el menú al hacer click en cualquier opción
+        document.querySelectorAll('.nav-list a').forEach(function(link){
+            link.addEventListener('click', function(){
+                navList.classList.remove('open');
+            });
+        });
+    }
+});

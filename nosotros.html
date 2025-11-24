@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Asymmetric</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo-asymmetric.png" alt="Logo" style="height:44px;">
+      <span class="logo-text">ASYMMETRIC</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-list" id="navList">
+      <li><a href="index.html#servicios">Servicios</a></li>
+      <li><a href="index.html#portafolio">Portafolio</a></li>
+      <li><a href="index.html#equipo">Equipo</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+      <li><a href="nosotros.html" class="nav-btn">Nosotros</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main>
+      <section class="hero">
+          <div class="hero-content">
+            <h1>Nosotros</h1>
+            <p>Conoce al equipo y nuestra ubicación</p>
+          </div>
+      </section>
+
+      <section class="about-team" style="padding:4rem 2rem;">
+        <h2>Equipo Directivo</h2>
+        <div class="team-grid">
+          <!-- Ejemplo para cada miembro -->
+          <div class="team-member">
+            <img src="images/team/soledad.jpg" alt="Soledad San Martin" class="member-avatar" style="width:90px; border-radius:50%; margin-bottom:1rem;">
+            <h3>M. Soledad San Martin</h3>
+            <p><strong>Socia - Gerente Área Comercial</strong></p>
+            <p>Arquitecta con más de 15 años de experiencia en postventa, gestión comercial y de proyectos.</p>
+            <p><small>Ex-Gerente General Fmax, Jefe Venta ASL Sencorp.</small></p>
+          </div>
+          <div class="team-member">
+            <img src="images/team/renzo.jpg" alt="Renzo Borghero" class="member-avatar" style="width:90px; border-radius:50%; margin-bottom:1rem;">
+            <h3>Renzo Borghero</h3>
+            <p><strong>Socio - Gerente Arquitectura</strong></p>
+            <p>Especialista en retail y arquitectura sustentable, más de 15 años liderando proyectos.</p>
+            <p><small>Ex-Gerente Diseño Ecocarga, Jefe Proyectos SMU Retail.</small></p>
+          </div>
+          <div class="team-member">
+            <img src="images/team/osvaldo.jpg" alt="Osvaldo Velásquez" class="member-avatar" style="width:90px; border-radius:50%; margin-bottom:1rem;">
+            <h3>Osvaldo Velásquez</h3>
+            <p><strong>Socio - Gerente Operaciones</strong></p>
+            <p>Ingeniero Eléctrico, experto en CCTV y climatización, 15 años en sector minero y comercial.</p>
+            <p><small>Consultor empresarial, experiencia en sistemas de minería.</small></p>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding:3rem 2rem;">
+        <h2>Ubicación</h2>
+        <!-- Mapa Google Embed -->
+        <div style="border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.10); overflow:hidden; max-width:600px; margin:auto;">
+            <iframe src="https://www.google.com/maps?q=Av.+Nueva+Providencia+2155,+Providencia,+Santiago,+Chile&output=embed"
+              width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p style="text-align:center; margin-top:12px;">Av. Nueva Providencia N°2155 Of.1011B, Edificio Panorámico, Providencia, Stgo.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 ASYMMETRIC. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var menu = document.getElementById('menuToggle');
+    var navList = document.getElementById('navList');
+    if(menu && navList) {
+        menu.addEventListener('click', function() {
+            navList.classList.toggle('open');
+        });
+        document.querySelectorAll('.nav-list a').forEach(function(link){
+            link.addEventListener('click', function(){
+                navList.classList.remove('open');
+            });
+        });
+    }
+});
+</script>
+
+
+</body>
+</html>

@@ -9,20 +9,26 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
-            <div class="logo">
-    <img src="images/logo-asymmetric.png" alt="Logo Asymmetric" style="height:48px; vertical-align:middle;">
-    <span class="logo-text">ASYMMETRIC</span>
-</div>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo-asymmetric.png" alt="Logo" style="height:44px;">
+      <span class="logo-text">ASYMMETRIC</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-list" id="navList">
+      <li><a href="index.html#servicios">Servicios</a></li>
+      <li><a href="index.html#portafolio">Portafolio</a></li>
+      <li><a href="index.html#equipo">Equipo</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+      <li><a href="nosotros.html" class="nav-btn">Nosotros</a></li>
+    </ul>
+  </nav>
+</header>
 
-            <ul>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <!-- HERO -->
     <section class="hero">
@@ -206,7 +212,22 @@ document.getElementById('contactForm').addEventListener('submit', async function
             </div>
         </div>
     </footer>
-
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var menu = document.getElementById('menuToggle');
+    var navList = document.getElementById('navList');
+    if(menu && navList) {
+        menu.addEventListener('click', function() {
+            navList.classList.toggle('open');
+        });
+        document.querySelectorAll('.nav-list a').forEach(function(link){
+            link.addEventListener('click', function(){
+                navList.classList.remove('open');
+            });
+        });
+    }
+});
+</script>
     <script src="js/data.js"></script>
     <script src="js/functions.js"></script>
 </body>
