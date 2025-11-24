@@ -1,2 +1,0 @@
-# Asymmetric - Sitio Web Corporativo
-
