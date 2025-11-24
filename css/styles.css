@@ -34,6 +34,77 @@ body {
     overflow-x: hidden;
 }
 
+body.dark-mode {
+  background-color: var(--light-bg);
+  color: var(--accent);
+  --primary: #ffffff;
+  --primary-dark: #e5e5e5;
+  --secondary: #2d2d2d;
+  --accent: #FF9900;
+  --light-bg: #151515;
+  --white: #111111;
+  --text-dark: #111111;
+  --text-light: #111111;
+  --border: #23273f;
+  --shadow: 0 10px 30px rgba(255,255,255,0.08);
+  --shadow-sm: 0 2px 8px rgba(255,255,255,0.04);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode a {
+  color: var(--accent) !important;
+}
+
+body.dark-mode .footer-content,
+body.dark-mode .footer-content p,
+body.dark-mode .footer-content a,
+body.dark-mode .about-team,
+body.dark-mode .team-member {
+  color: var(--accent) !important;
+}
+
+body.dark-mode a:hover,
+body.dark-mode .footer-links a:hover,
+body.dark-mode .social-icons a:hover {
+  color: var(--white) !important;
+}
+
+.darkmode-btn {
+  background: var(--secondary);
+  color: var(--primary);
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.darkmode-btn:hover {
+  background: var(--accent);
+  color: var(--white);
+  box-shadow: 0 4px 16px rgba(255,153,0,0.12);
+  transform: scale(1.06);
+}
+.darkmode-btn svg {
+  transition: transform 0.3s ease;
+  width: 20px;
+  height: 20px;
+}
+
+body.dark-mode .darkmode-btn {
+  background: var(--primary-dark);
+  color: var(--accent);
+}
+
 /* HEADER Y NAV */
 header {
     position: sticky;

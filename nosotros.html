@@ -19,12 +19,22 @@
       <span></span>
     </button>
     <ul class="nav-list" id="navList">
-      <li><a href="index.html#servicios">Servicios</a></li>
-      <li><a href="index.html#portafolio">Portafolio</a></li>
-      <li><a href="index.html#equipo">Equipo</a></li>
-      <li><a href="index.html#contacto">Contacto</a></li>
-      <li><a href="nosotros.html" class="nav-btn">Nosotros</a></li>
-    </ul>
+  <li><a href="index.html#servicios">Servicios</a></li>
+  <li><a href="index.html#portafolio">Portafolio</a></li>
+  <li><a href="index.html#equipo">Equipo</a></li>
+  <li><a href="index.html#contacto">Contacto</a></li>
+  <li><a href="nosotros.html" class="nav-btn">Nosotros</a></li>
+  <li>  
+    <button id="darkModeToggle" class="darkmode-btn" aria-label="Alternar modo oscuro">
+      <span id="darkModeIcon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+        </svg>
+      </span>
+      <span id="darkModeBtnText">Modo oscuro</span>
+    </button>
+  </li>
+</ul>
   </nav>
 </header>
 
@@ -82,7 +92,7 @@
     </footer>
 
     <script>
-document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
     var menu = document.getElementById('menuToggle');
     var navList = document.getElementById('navList');
     if(menu && navList) {
@@ -98,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+<script src="js/functions.js"></script>
 
 </body>
 </html>
