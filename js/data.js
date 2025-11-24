@@ -132,16 +132,7 @@ const portfolio = [
         type: "Habilitación",
         images: ["cielo-milano-01.jpg", "cielo-milano-02.jpg", "cielo-milano-03.jpg"]
     },
-    {
-        title: "Matlife - Área Rentas Inmobiliarias",
-        category: "Arquitectura",
-        area: "Edificio Patrimonial",
-        year: 2019,
-        location: "Santiago Centro",
-        description: "Re-habilitación Edificio Patrimonial Las Hiedras",
-        type: "Obra Completa",
-        images: ["matlife-hiedras-01.jpg", "matlife-hiedras-02.jpg", "matlife-hiedras-03.jpg"]
-    },
+    
     {
         title: "Bubble Gummers Rediseño",
         category: "Comercial",
