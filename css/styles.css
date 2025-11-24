@@ -996,3 +996,22 @@ footer {
     display: flex;
   }
 }
+
+.social-icons {
+  display: flex;
+  gap: 24px;            /* Ajusta aquí la separación entre iconos */
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+.social-icons a img {
+  border-radius: 50%;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.11);
+  background: #fff;
+  padding: 6px;
+  transition: transform .15s;
+}
+.social-icons a img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.17);
+}
