@@ -76,16 +76,7 @@ const portfolio = [
         type: "Obra Completa",
         images: ["carl-jr-dominiicos-01.jpg", "carl-jr-dominiicos-02.jpg", "carl-jr-dominiicos-03.jpg"]
     },
-    {
-        title: "Carl's Jr. Mall Vivo Galería Imperio",
-        category: "Comercial",
-        area: "Local Comercial",
-        year: 2018,
-        location: "Galería Imperio, Santiago",
-        description: "Restaurante con concepto de servicio rápido y acogedor",
-        type: "Obra Completa",
-        images: ["carl-jr-imperio-01.jpg", "carl-jr-imperio-02.jpg", "carl-jr-imperio-03.jpg"]
-    },
+    
     {
         title: "Carl's Jr. Vitacura",
         category: "Comercial",
@@ -96,26 +87,7 @@ const portfolio = [
         type: "Obra Completa",
         images: ["carl-jr-vitacura-01.jpg", "carl-jr-vitacura-02.jpg", "carl-jr-vitacura-03.jpg"]
     },
-    {
-        title: "Carl's Jr. Mall Plaza Oeste",
-        category: "Comercial",
-        area: "Local Comercial",
-        year: 2018,
-        location: "Sector Oeste, Santiago",
-        description: "Restaurante con diseño moderno y eficiente",
-        type: "Obra Completa",
-        images: ["carl-jr-oeste-01.jpg", "carl-jr-oeste-02.jpg", "carl-jr-oeste-03.jpg"]
-    },
-    {
-        title: "Carl's Jr. Independencia",
-        category: "Comercial",
-        area: "Local Comercial",
-        year: 2019,
-        location: "Independencia, Santiago",
-        description: "Sucursal con concepto de take-away y servicio al cliente",
-        type: "Obra Completa",
-        images: ["carl-jr-independencia-01.jpg", "carl-jr-independencia-02.jpg", "carl-jr-independencia-03.jpg"]
-    },
+    
 
     // Little Caesars - Proyectos
     {
@@ -180,56 +152,8 @@ const portfolio = [
         type: "Proyecto",
         images: ["bubble-gummers-01.jpg", "bubble-gummers-02.jpg", "bubble-gummers-03.jpg"]
     },
-    {
-        title: "Coffee Market La Cisterna",
-        category: "Comercial",
-        area: "Local Comercial",
-        year: 2024,
-        location: "Estación Intermodal La Cisterna",
-        description: "Café con concepto de servicio rápido en estación intermodal",
-        type: "Obra Completa",
-        images: ["coffee-market-01.jpg", "coffee-market-02.jpg", "coffee-market-03.jpg"]
-    },
-    {
-        title: "EcoCarga - Remodelaciones Múltiples",
-        category: "Comercial",
-        area: "Múltiples Locales",
-        year: 2020,
-        location: "Las Condes, Maipú, Arauco, Valparaíso, Viña",
-        description: "Remodelación, manutención y recuperación de múltiples sucursales",
-        type: "Obra Completa",
-        images: ["ecocarga-01.jpg", "ecocarga-02.jpg", "ecocarga-03.jpg"]
-    },
-    {
-        title: "Joyerías Marró",
-        category: "Comercial",
-        area: "Locales Comerciales",
-        year: 2023,
-        location: "Vitacura, Camino El Alba, Estoril",
-        description: "Tiendas de joyería con diseño elegante y moderno",
-        type: "Obra Completa",
-        images: ["marró-vitacura-01.jpg", "marró-vitacura-02.jpg", "marró-vitacura-03.jpg"]
-    },
-    {
-        title: "Modista Gilda Vitacura",
-        category: "Comercial",
-        area: "Local Comercial",
-        year: 2025,
-        location: "Vitacura, Santiago",
-        description: "Tienda de modas con diseño contemporáneo",
-        type: "Obra Completa",
-        images: ["modista-gilda-01.jpg", "modista-gilda-02.jpg", "modista-gilda-03.jpg"]
-    },
-    {
-        title: "Chikin - Comida Coreana",
-        category: "Comercial",
-        area: "Local Comercial",
-        year: 2025,
-        location: "San Pascual, Las Condes",
-        description: "Restaurante de comida coreana con concepto moderno",
-        type: "Obra Completa",
-        images: ["chikin-01.jpg", "chikin-02.jpg", "chikin-03.jpg"]
-    }
+    
+    
 ];
 
 const team = [
